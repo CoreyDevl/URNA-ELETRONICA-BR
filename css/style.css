@@ -1,0 +1,116 @@
+body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.urna{
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+}
+
+.tela{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to top, #E8E8E8, #C1C1C1);
+    border: 4px solid #cac4c4
+}
+
+.teclado{
+    width: 300px;
+    margin-left: 30px;
+    background-color: #403A3A;
+}
+
+.tc_linha{
+    display: flex; 
+    justify-content: center;
+ 
+}
+
+.botoes{
+    display: flex;
+    justify-content:  flex-end;
+    align-items: center;
+    width: 70px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    color: blanchedalmond;
+    font-size: 9pt;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow:4px 3px 0px #696969;
+    
+}
+
+.botoes1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    color: blanchedalmond;
+    font-size: 25pt;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow:4px 3px 0px #696969;
+   
+}
+
+.btbranco{
+    background: linear-gradient(to bottom, white, white, #747474);
+    color: black;
+    margin: 18px 5px 5px 4px;
+    font-size: 13pt;
+    height: 34px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.btcorrige{
+    background: linear-gradient(to bottom, #d9ff00, #e3ec64, #f16161);
+    margin: 18px 5px 5px 4px;
+    font-size: 13pt;
+    height: 34px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+.btconfirma{
+    background: linear-gradient(to bottom, #0dd30d, #b0b931, #147014);
+    margin: 5px 5px 5px 4px;
+    font-size: 13pt;
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+.d1{
+
+    flex: 1;
+    display: flex;
+}
+
+.d1right{
+    
+    width: 90px;
+}
+.d1left{
+    flex: 1;
+}
+
+.d2{
+    height: 50px;
+    font-size: 15px;
+    border-top: 2px solid #575353;
+    padding-left: 10px;
+}
