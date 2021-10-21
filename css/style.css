@@ -106,6 +106,34 @@ body{
 }
 .d1left{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.d1left1{
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.137);
+    display: flex;
+    align-items: center;
+}
+.d1left2{
+    height: 50px;
+    background-color: rgba(136, 155, 66, 0.137);
+    display: flex;
+    align-items: center;
+}
+.d1left3{
+    height: 50px;
+    background-color: rgba(85, 66, 155, 0.137);
+    display: flex;
+    align-items: center;
+}
+.d1left4{
+    flex: 1;
+    background-color: rgba(202, 255, 12, 0.137);
+ 
 }
 
 .d2{
