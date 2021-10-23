@@ -32,7 +32,7 @@ let etapas = [
             vice: 'Homem Aranha Cantor',
             fotos: [
                 {url:'../img/cand1.png', legenda:'Presidente'},
-                {url:'../img/cand1vice.png', legenda:'Vice-Presidente'}
+                {url:'../img/cand1vice.png', legenda:'Vice-Presidente', small: true}
             ]
         },
         {
@@ -42,7 +42,7 @@ let etapas = [
             vice: 'Bender',
             fotos: [
                 {url:'../img/cand2.png', legenda:'Presidente'},
-                {url:'../img/cand2vice.png', legenda:'Vice-Presidente'} 
+                {url:'../img/cand2vice.png', legenda:'Vice-Presidente', small: true} 
         
         ] 
     },

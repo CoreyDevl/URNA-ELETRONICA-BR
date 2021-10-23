@@ -115,10 +115,12 @@ body{
     font-size: 14px;
 }
 
-.d1image.small{
-    width: 80%;
-    font-size: 10px;
-}
+ #small{
+      
+     width: 30%;
+     height: 30%;
+     font-size: 10pt;
+ }
 
 .d1image img{
     width: 100%;
@@ -175,7 +177,14 @@ body{
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
-
+ 
+.nulo.pisca{
+    font-size: 40px;
+    font-weight: bolder;
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
 .d1left4{
     flex: 1;
     

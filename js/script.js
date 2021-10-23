@@ -7,10 +7,13 @@ let numeros = document.querySelector('.d1left3')
 
 let etapaAtual = 0
 let numero = ``;
+let votoBranco = false
 
 function começarEtapa() {
     let etapa = etapas[etapaAtual];
     let numeroHtml = `` ;
+    numero = ``;
+    votoBranco = false
      
     for(let i = 0 ; i < etapa.numeros ; i ++){
         if(i ===0){
@@ -45,12 +48,21 @@ function atualizaInterface(){
 
         let fotosHtml = '';
         for(let i in candidato.fotos){
-            
-            fotosHtml += `<div class="d1image">
-            <img src="${candidato.fotos[i].url}" alt=""/>${candidato.fotos[i].legenda}</div>`
+            if(candidato.fotos[i].small){
+                fotosHtml += `<div id="small">
+            <img src="${candidato.fotos[i].url}"/>${candidato.fotos[i].legenda}</div>`
+            console.log(candidato.fotos[i].small)
+            }else{
+                fotosHtml += `<div class="d1image">
+            <img src="${candidato.fotos[i].url}" alt=""/>${candidato.fotos[i].legenda}</div>` 
+        }
         }
         lateral.innerHTML = fotosHtml;
-    }
+    }else{
+        seuVotoPara.style.display = 'block';
+        aviso.style.display = 'block';
+        descriçao.innerHTML = `<div class="nulo pisca">VOTO NULO</div>`
+    } 
 } 
 
 function clicou(n){
@@ -71,15 +83,40 @@ function clicou(n){
 }
 
 function branco(){
-    alert("Clicou em BRANCO")
+        numero = '';
+        votoBranco = true
+        seuVotoPara.style.display = 'block';
+        aviso.style.display = 'block';
+        numeros.innerHTML = '';
+        lateral.innerHTML = '';
+        descriçao.innerHTML = `<div class="nulo pisca">VOTO EM BRANCO</div>`
+     
 }
 
 function corrige(){
-    alert("Clicou em CORRIGE")
+   começarEtapa()
 }
 
 function confirma(){
-    alert("Clicou em CONFIRMA")
-}
+    let etapa = etapas[etapaAtual];
+    let votoConfirmado = false
+    if(votoBranco === true){
+        votoConfirmado = true;
+        console.log("Confirmado VOTO EM BRANCO")
+    } else if (numero.length === etapa.numeros){
+        votoConfirmado = true;
+        console.log("Confirmado como"+numero);
+    }
+    if(votoConfirmado){
+        etapaAtual++;
+        if(etapas[etapaAtual] !== undefined) {
+            começarEtapa();
+        }else{
+            descriçao.innerHTML = `<div class="nulo pisca">FIM</div>`;
+        }
+    }
+    
+    }
+
 
 começarEtapa();
