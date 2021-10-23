@@ -140,25 +140,26 @@ body{
 
 .d1left1{
     height: 50px;
-    background-color: rgba(255, 0, 0, 0.137);
+     
     display: flex;
     align-items: center;
 }
 .d1left2{
     height: 50px;
-    background-color: rgba(136, 155, 66, 0.137);
+ 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .d1left3{
     height: 50px;
-    background-color: #55429b23;
+ 
     display: flex;
     align-items: center;
 }
 
 .numero{
+    margin: 2px;
     display: inline-block;
     width: 30px;
     height: 40px;
@@ -177,7 +178,7 @@ body{
 
 .d1left4{
     flex: 1;
-    background-color: rgba(202, 255, 12, 0.137);
+    
  
 }
 
