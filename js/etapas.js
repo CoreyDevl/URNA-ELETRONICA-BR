@@ -26,24 +26,23 @@ let etapas = [
         numeros: 2,
         candidatos: [
             {
-            numero: '99',
-            nome: 'Homem de Ferro',
-            partido: 'Liga da Justiça',
-            vice: 'Homem Aranha Cantor',
-            fotos: [
-                {url:'../img/cand1.png', legenda:'Presidente'},
-                {url:'../img/cand1vice.png', legenda:'Vice-Presidente', small: true}
+        numero: '99',
+        nome: 'Homem de Ferro',
+        partido: 'Liga da Justiça',
+        vice: 'Homem Aranha Cantor',
+        fotos: [
+            {url:'../img/cand1.png', legenda:'Presidente'},
+            {url:'../img/cand1vice.png', legenda:'Vice-Presidente', small: true}
             ]
         },
         {
-            numero: '43',
-            nome: 'Kleiton',
-            partido: 'Partido of WAR',
-            vice: 'Bender',
-            fotos: [
-                {url:'../img/cand2.png', legenda:'Presidente'},
-                {url:'../img/cand2vice.png', legenda:'Vice-Presidente', small: true} 
-        
+        numero: '43',
+        nome: 'Kleiton',
+        partido: 'Partido of WAR',
+        vice: 'Bender',
+        fotos: [
+            {url:'../img/cand2.png', legenda:'Presidente'},
+            {url:'../img/cand2vice.png', legenda:'Vice-Presidente', small: true}
         ] 
     },
 ]

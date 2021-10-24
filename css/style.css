@@ -116,10 +116,14 @@ body{
 }
 
  #small{
-      
-     width: 30%;
-     height: 30%;
+    border: 1px solid black;
+     background-color: white;
+     margin: 0px 0px 0px 0px;
+     display: flex;
+     flex-direction: column;
+     width: 82%;
      font-size: 10pt;
+     text-align:center;
  }
 
 .d1image img{

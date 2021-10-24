@@ -51,9 +51,8 @@ function atualizaInterface(){
             if(candidato.fotos[i].small){
                 fotosHtml += `<div id="small">
             <img src="${candidato.fotos[i].url}"/>${candidato.fotos[i].legenda}</div>`
-            console.log(candidato.fotos[i].small)
-            }else{
-                fotosHtml += `<div class="d1image">
+        }else{
+            fotosHtml += `<div class="d1image">
             <img src="${candidato.fotos[i].url}" alt=""/>${candidato.fotos[i].legenda}</div>` 
         }
         }
