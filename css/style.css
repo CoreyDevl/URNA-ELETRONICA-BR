@@ -189,6 +189,20 @@ body{
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
+
+.giga.pisca{
+    font-size: 100px;
+    font-weight: bolder;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    animation-name: pisca;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+
 .d1left4{
     flex: 1;
     
